@@ -1,0 +1,24 @@
+<div class="wrapper" #sidenav1>
+  <div class="header">
+    <mat-toolbar class="mat-elevation-z6" color="primary">
+      <button mat-icon-button (click)="onMenuClick()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1 class="example-app-name">Nested Menus</h1>
+    </mat-toolbar>
+  </div>
+  <div style="overflow-y: auto;">
+    <div class="content">
+      <ng-material-multilevel-menu #sidenav2 [items]="menuItens">
+      </ng-material-multilevel-menu>
+    </div>
+  </div>
+  <div class="footer">
+    <mat-toolbar class="mat-elevation-z4" color="primary">
+      <span class="fill-space"></span>
+      <div class="toolbar-icon">
+        <mat-icon>account_circle</mat-icon>
+      </div>
+    </mat-toolbar>
+  </div>
+</div>
